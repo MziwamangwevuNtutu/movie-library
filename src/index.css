@@ -1,13 +1,12 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* You can keep your other custom styles below these lines */
+
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+  background-color: #111827; /* Matches Tailwind's gray-900 */
+  color: white;
+  font-family: 'Inter', sans-serif;
 }
