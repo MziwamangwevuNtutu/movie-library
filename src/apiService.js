@@ -1,7 +1,6 @@
 import axios from 'axios';
 
-// Ensure this matches your Spring Boot server.servlet.context-path
-const API_BASE_URL = "http://localhost:8080/movies/api/movies";
+const API_BASE_URL = (process.env.REACT_APP_API_BASE_URL || `${process.env.REACT_APP_API_URL}/movies/api/movies`).replace(/\/$/, "");
 
 export const getMovies = () => axios.get(API_BASE_URL);
 export const addMovie = (movie) => axios.post(API_BASE_URL, movie);
